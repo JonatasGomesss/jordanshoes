@@ -169,7 +169,7 @@ const produtos = [
 .preco {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #000;
+  color: #c3ffd9;
 }
 
 @media (max-width: 768px) {
@@ -199,7 +199,6 @@ const produtos = [
   }
 
   .cards {
-    grid-template-columns: 1fr;
     gap: 24px;
     padding: 0 16px;
   }
