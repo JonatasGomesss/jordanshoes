@@ -174,7 +174,6 @@ const produtos = [
 
 @media (max-width: 768px) {
 
-  /* HERO */
   .imagem {
     height: 35vh;
     justify-content: center;
@@ -199,7 +198,6 @@ const produtos = [
     padding: 0 20px;
   }
 
-  /* CARDS */
   .cards {
     grid-template-columns: 1fr;
     gap: 24px;
