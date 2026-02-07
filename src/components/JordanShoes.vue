@@ -103,13 +103,12 @@ const produtos = [
 
 <style scoped>
 .cabeca {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #1f1e2b;
   text-align: center;
   font-weight: 400;
   padding: 10px;
 }
-
 .imagem {
   background-image: url(../img/image-michael-jordan.png);
   background-size: cover;
@@ -156,6 +155,7 @@ const produtos = [
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
+
   max-width: 1200px;
   margin: 0 auto 60px;
   padding: 0 20px;
@@ -169,6 +169,55 @@ const produtos = [
 .preco {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #b6cafc;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+
+  /* HERO */
+  .imagem {
+    height: 35vh;
+    justify-content: center;
+  }
+
+  .info {
+    position: static;
+    text-align: center;
+    padding: 0 20px;
+    max-width: 100%;
+  }
+
+  .img {
+    justify-content: center;
+  }
+
+  .stile-P {
+    width: 100%;
+  }
+
+  .info-text {
+    padding: 0 20px;
+  }
+
+  /* CARDS */
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0 16px;
+  }
+
+  .titulo {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .preco {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .v-card-actions {
+    padding: 16px;
+  }
 }
 </style>
